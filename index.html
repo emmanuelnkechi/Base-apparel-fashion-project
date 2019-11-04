@@ -142,6 +142,25 @@
        margin-left: 20px;
      }
 
+     /* for mobile */
+ @media only screen and (max-width: 375px) {
+.desktop-picture{
+  display: none;
+}
+
+.flex-container{
+  display: flex;
+}
+
+.flex-item{
+  display: column;
+}
+ }
+
+/* for desktop */
+ @media only screen and (min-width: 1440px){
+
+ }
     
   </style>
 </head>
@@ -154,6 +173,7 @@
         <div class="flex-item container" style="flex-basis: 90% !important">
           <div class="content">
             <img src="images/logo.svg" alt="">
+            <img src="images/hero-mobile.jpg" alt="" style="display: none;" class="mobile-picture">
             <h1 class="first-header"><span class="first-colored-word">WE'RE <br></span>COMING<br> SOON</h1>
             <p class="paragraph">Hello fellow shoppers! We are currently building our new<br> fashion store. Add your
               email below to stay up-to-date with<br> announcements and our launch deal.</p>
@@ -191,12 +211,16 @@
         </div>
 
         <div class="flex item" style="flex-basis: 10% !important">
-          <img src="images/hero-desktop.jpg" style="height: 100%;" alt="">
+          <img src="images/hero-desktop.jpg" style="height: 100%;" alt="" class="desktop-picture">
         </div>
       </div>
     </main>
   </section>
 
+
+  <!-- for mobile -->
+  
+  
 
   <script src="main.js"></script>
 </body>
