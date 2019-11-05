@@ -190,10 +190,34 @@ input[type="text"]{
   position: relative;
   right: 10px;
   left: 75px;
-  
+}
+  #error-one-message{
+    color: hsl(0, 93%, 68%);
+    margin-left: 70px;
+  }
+
+  #error-two-message {
+    color: hsl(0, 93%, 68%);
+    margin-left: 70px;
+  }
+
+  #image-one{
+    position: absolute;
+    left: 270px;
+    top: 10px;
+    right: 0px;
+  }
+
+  #email-input{
+   text-align: start;
+   text-justify: start;
+   padding-left: 0px;
+  }
+
+ 
  }
 
-}
+
 
 /* for desktop */
 @media screen and (min-width: 600px){
