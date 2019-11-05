@@ -46,6 +46,7 @@ body {
   .paragraph {
     color: hsl(0, 36%, 70%);
     line-height: 30px;
+    width: 430px;
   }
 
   form {
@@ -127,12 +128,16 @@ body {
 
    /* for mobile */
 @media screen and (max-width: 375px) {
+  html{
+    margin:0;
+  }
 .desktop-picture{
 display: none;
 }
 .mobile-picture {
 display: block;
-width: 375px;
+width: 100%;
+margin: 0px;
 }
 /* body{
     width: 100%;
@@ -141,16 +146,17 @@ width: 375px;
 } */
 #backgroundImage{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0px;
 }
  main {
      padding: 0px;
-     margin: 10px 15px;
+     margin-bottom: 50px;
+     /* margin: 10px 15px; */
  }
 
  .logo{
-     margin-top: 10px;
+     margin-top: 20px;
      margin-left: 30px;
  }
  
@@ -161,10 +167,31 @@ width: 375px;
  .second-part{
    text-align-last: center;
    font-size: 16px;
+   margin: 10px 15px;
  }
 input[type="text"]{
   width: 300px;
 }
+
+.button-div {
+  position: absolute;
+  top: 830px;
+  left: 320px;
+}
+.content{
+  margin: 0px
+}
+
+.input-div {
+  position: relative;
+}
+
+#image-one {
+  position: relative;
+  right: 10px;
+  left: 75px;
+  
+ }
 
 }
 
