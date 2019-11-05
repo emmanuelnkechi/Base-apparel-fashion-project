@@ -12,157 +12,8 @@
   <title>Frontend Mentor | Base Apparel coming soon page</title>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    body {
-      height: 100%;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      font-family: 'Josefin Sans', sans-serif;
-      font-size: 16px;
-    }
-
-    section {
-      width: 100%;
-      height: 50%;
-    }
-
-    #backgroundImage {
-      background-image: url("images/bg-pattern-desktop.svg");
-      height: 100%;
-      width: 100%;
-    }
-
-    .flex-container {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .content {
-      margin: 45px 100px 50px 100px;
-    }
-
-    .first-header {
-      line-height: 60px;
-      font-size: 40px;
-      font-weight: 600px;
-      letter-spacing: 15px;
-      margin-top: 120px;
-    }
-
-    .first-colored-word {
-      color: hsl(0, 36%, 70%);
-      font-weight: lighter !important;
-      font-family: 'Josefin Sans', sans-serif;
-      line-height: 60px !important;
-      letter-spacing: 15px;
-    }
-
-    .paragraph {
-      color: hsl(0, 36%, 70%);
-      line-height: 30px;
-    }
-
-    form {
-      margin-top: 40px !important;
-    }
-
-    input[type="text"] {
-      height: 45px;
-      width: 400px;
-      border-radius: 20px;
-      border: 1;
-      background: none;
-      cursor: pointer;
-      padding-left: 18px;
-      position: relative;
-      color: hsl(0, 36%, 70%);
-    }
-
-    input::placeholder {
-      color: hsl(0, 36%, 70%);
-    }
-
-    input:focus {
-      outline: none;
-    }
-
-    button {
-      background-color: hsl(0, 93%, 68%);
-      position: absolute;
-      height: 48px;
-      border-radius: 20px;
-      width: 85px;
-      border: none;
-    }
-
-    button:focus {
-      outline: none;
-    }
-
-    button:hover {
-      background-color: hsl(0, 80%, 86%);
-
-    }
-
-    .input-div {
-      position: relative;
-    }
-
-    .button-div {
-      position: absolute;
-      top: 546px;
-      left: 460px;
-    }
-
-    #error-one-div {
-      display: flex;
-      flex-direction: row;
-
-    }
-     #error-two-div {
-       display: flex;
-       flex-direction: row;
-     }
-
-     #image-one {
-      position: relative;
-      right: 100px;
-     }
-
-     #error-one-message{
-       color: hsl(0, 93%, 68%);
-       margin-left: 20px;
-     }
-
-     #error-two-message {
-       color: hsl(0, 93%, 68%);
-       margin-left: 20px;
-     }
-
-     /* for mobile */
- @media only screen and (max-width: 375px) {
-.desktop-picture{
-  display: none;
-}
-
-.flex-container{
-  display: flex;
-}
-
-.flex-item{
-  display: column;
-}
- }
-
-/* for desktop */
- @media only screen and (min-width: 1440px){
-
- }
-    
-  </style>
 </head>
 
 <body>
@@ -172,8 +23,10 @@
       <div class="flex-container">
         <div class="flex-item container" style="flex-basis: 90% !important">
           <div class="content">
-            <img src="images/logo.svg" alt="">
-            <img src="images/hero-mobile.jpg" alt="" style="display: none;" class="mobile-picture">
+                <img src="images/logo.svg" alt="" class="logo">
+                <img src="images/hero-mobile.jpg" alt="" class="mobile-picture">
+            
+            <div class="second-part">
             <h1 class="first-header"><span class="first-colored-word">WE'RE <br></span>COMING<br> SOON</h1>
             <p class="paragraph">Hello fellow shoppers! We are currently building our new<br> fashion store. Add your
               email below to stay up-to-date with<br> announcements and our launch deal.</p>
@@ -181,7 +34,7 @@
             <form action="" id="myForm">
               <div class="input-div">
                 <input id="email-input" type="text" placeholder="Email Address" style="vertical-align: middle;">
-                  <img src="images/icon-error.svg" id="image-one" alt="" style="vertical-align: middle; display: none;">
+                <img src="images/icon-error.svg" id="image-one" alt="" style="vertical-align: middle; display: none;">
               </div>
 
               <div class="button-div">
@@ -192,23 +45,25 @@
 
               <div id="error-one-div" style="display: none;">
                 <div id="flex-one-div" style="display: flex;">
-                <span id="text-one-span">
-                  <p id="error-one-message" class="text-danger">An Email is required</p>
-                </span>
+                  <span id="text-one-span">
+                    <p id="error-one-message" class="text-danger">An Email is required</p>
+                  </span>
                 </div>
               </div>
 
               <div id="error-two-div" style="display: none;">
-                <div id="flex-two-div" style="display: flex;"> 
-                <span id="text-two-span">
-                  <p id="error-two-message" class="text-danger">Please provide a valid email address</p>
-                </span>
+                <div id="flex-two-div" style="display: flex;">
+                  <span id="text-two-span">
+                    <p id="error-two-message" class="text-danger">Please provide a valid email address</p>
+                  </span>
                 </div>
               </div>
             </form>
+            </div>
 
           </div>
         </div>
+    
 
         <div class="flex item" style="flex-basis: 10% !important">
           <img src="images/hero-desktop.jpg" style="height: 100%;" alt="" class="desktop-picture">
@@ -219,8 +74,8 @@
 
 
   <!-- for mobile -->
-  
-  
+
+
 
   <script src="main.js"></script>
 </body>
